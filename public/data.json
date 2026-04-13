@@ -1,0 +1,92 @@
+[
+  {
+    "id": "TIC-101",
+    "title": "Payment Gateway Timeout",
+    "description": "Users are reporting 504 errors when attempting to process credit card transactions at checkout.",
+    "customer": "Global Retail Corp",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "4/12/2026"
+  },
+  {
+    "id": "TIC-102",
+    "title": "Broken Password Reset Link",
+    "description": "The 'Reset Password' button in the automated email redirects to a 404 page.",
+    "customer": "Sarah Jenkins",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "4/12/2026"
+  },
+  {
+    "id": "TIC-103",
+    "title": "Update Feature Documentation",
+    "description": "The API documentation needs to be updated to reflect the new v2 endpoints released last week.",
+    "customer": "DevSolutions LLC",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "4/12/2026"
+  },
+  {
+    "id": "TIC-104",
+    "title": "Mobile App Crashing on Startup",
+    "description": "The iOS application closes immediately after the splash screen on iPhone 15 models.",
+    "customer": "TechHub Inc",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "4/12/2026"
+  },
+  {
+    "id": "TIC-105",
+    "title": "Inaccurate Monthly Billing Statement",
+    "description": "Customer was charged for a premium subscription despite downgrading to the basic plan.",
+    "customer": "Mark Thompson",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "4/11/2026"
+  },
+  {
+    "id": "TIC-106",
+    "title": "Dark Mode UI Glitch",
+    "description": "Text in the sidebar is illegible when Dark Mode is enabled due to low contrast.",
+    "customer": "DesignFlow Agency",
+    "priority": "Low",
+    "status": "In Progress",
+    "createdAt": "4/13/2026"
+  },
+  {
+    "id": "TIC-107",
+    "title": "SSO Login Failure",
+    "description": "Internal employees cannot authenticate via Okta integration.",
+    "customer": "Enterprise Data Systems",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "4/13/2026"
+  },
+  {
+    "id": "TIC-108",
+    "title": "Request for Bulk Export Feature",
+    "description": "User is requesting a way to export all historical data to CSV in a single file.",
+    "customer": "Analysis Pros",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "4/13/2026"
+  },
+  {
+    "id": "TIC-109",
+    "title": "Missing Search Results",
+    "description": "Searching for specific SKUs returns no results even though they exist in the inventory.",
+    "customer": "Warehouse Logistics",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "4/13/2026"
+  },
+  {
+    "id": "TIC-110",
+    "title": "Email Notification Delay",
+    "description": "Welcome emails are taking up to 2 hours to arrive after user registration.",
+    "customer": "Startup Ventures",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "4/13/2026"
+  }
+]
