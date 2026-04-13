@@ -2,8 +2,8 @@ import React from 'react';
 import vector1 from '../../assets/vector1.png'
 const Heading = () => {
     return (
-        <div className='max-w-[1440px] mx-auto flex justify-between mt-10 flex-col md:flex-row '>
-            <div className="relative min-w-[705px] min-h-[250px] flex items-center justify-center overflow-hidden
+        <div className='max-w-[1440px] mx-auto flex justify-between mt-10 flex-col md:flex-row gap-3'>
+            <div className="relative min-w-[50%] min-h-[250px] flex items-center justify-center overflow-hidden
                 bg-gradient-to-r from-[#632EE3] to-[#9F62F2]">
                 <img
                     src={vector1}
@@ -19,7 +19,7 @@ const Heading = () => {
                 </div>
 
             </div>
-            <div className="relative min-w-[705px] min-h-[250px] flex items-center justify-center overflow-hidden
+            <div className="relative min-w-[50%] min-h-[250px] flex items-center justify-center overflow-hidden
                 bg-gradient-to-r from-[#54CF68] to-[#00827A]">
                 <img
                     src={vector1}
