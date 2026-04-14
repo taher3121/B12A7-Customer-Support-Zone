@@ -1,6 +1,6 @@
 import React from 'react';
 import vector1 from '../../assets/vector1.png'
-const Heading = ({count}) => {
+const Heading = ({count,CountResolved}) => {
     return (
         <div className='max-w-[1440px] mx-auto flex justify-between mt-10 flex-col md:flex-row gap-3'>
             <div className="relative min-w-[50%] min-h-[250px] flex items-center justify-center overflow-hidden
@@ -31,7 +31,7 @@ const Heading = ({count}) => {
                 />
                 <div className="relative text-white text-center">
                     <span>Resolved</span>
-                    <span className="block text-2xl font-bold">0</span>
+                    <span className="block text-2xl font-bold">{CountResolved}</span>
                 </div>
 
             </div>

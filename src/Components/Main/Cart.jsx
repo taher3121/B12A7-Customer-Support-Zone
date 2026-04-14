@@ -3,7 +3,7 @@ import vector2 from '../../assets/Vector (2).png'
 const cart = ({ customer,getCart }) => {
     // console.log(customer)
     return (
-        <div className="bg-base-100 card-xs shadow-sm min-h-[148px] min-w-[513px]" onClick={()=> getCart(customer)}>
+        <div className="bg-base-100 card-xs shadow-sm h-full w-auto" onClick={()=> getCart(customer)}>
             <div className="px-4 py-3">
                 <div className='flex items-center justify-between mb-1'>
                     <h2 className="card-title">{customer.title}</h2>

@@ -16,6 +16,8 @@ function App() {
 
   const [cart, setCart] = useState([])
   const [count, setCount] = useState(0)
+  const [CountResolved,setCountResolved]=useState(0)
+  const [resolvedList, setResolvedList]=useState([])
 
   const getCart = (customer) => {
     // const updateCoin = count + 1;
@@ -34,11 +36,13 @@ function App() {
       setCart([...cart, customer])
       const updateCoin = count + 1;
       setCount(updateCoin)
+      toast("In progress")
     }
     else {
       const findItem = cart.find(cart => cart.id === customer.id)
       if (!findItem) {
         setCart([...cart, customer])
+        toast("In progress")
         const updateCoin = count + 1;
         setCount(updateCoin)
       }
@@ -47,13 +51,26 @@ function App() {
       }
     }
   }
+
+  const resolved =(resolvedItem)=>{
+      // console.log(resolved)
+
+      setResolvedList([...resolvedList,resolvedItem])
+      const removeItem = cart.filter(cart=> cart.id !== resolvedItem.id)
+      setCart(removeItem)
+      setCountResolved(CountResolved+1)
+      setCount(count-1)
+      toast("Completed")
+      // console.log(removeItem)
+      console.log(resolvedList)
+  }
   return (
     <>
       <Navbar></Navbar>
-      <Heading count={count}></Heading>
+      <Heading count={count} CountResolved={CountResolved}></Heading>
 
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
-        <Main loadData={loadData} getCart={getCart} cart={cart}></Main>
+        <Main loadData={loadData} getCart={getCart} cart={cart} resolved={resolved}></Main>
       </Suspense>
       <ToastContainer />
     </>
