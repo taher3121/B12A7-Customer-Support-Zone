@@ -3,6 +3,7 @@ import Heading from "./Components/Heading/Heading"
 import Main from "./Components/Main/Main"
 import Navbar from "./Components/Navbar/Navbar"
  import { toast, ToastContainer} from 'react-toastify';
+import Fotter from "./Components/Fotter/Fotter";
 
 
 const fetchData = async () => {
@@ -72,6 +73,8 @@ function App() {
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>
         <Main loadData={loadData} getCart={getCart} cart={cart} resolved={resolved}></Main>
       </Suspense>
+
+      <Fotter></Fotter>
       <ToastContainer />
     </>
   )
